@@ -907,9 +907,19 @@ h1, h2, h3 {
 
   .hero-grid { grid-template-columns: 1fr; }
   .hero-right { min-height: 46vh; order: -1; }
+  .hero-right::after {
+    background: linear-gradient(180deg, rgba(10,10,9,0.05) 0%, rgba(10,10,9,0.2) 50%, rgba(10,10,9,0.95) 100%);
+  }
   .hero { padding-top: 76px; flex-direction: column; }
-  .hero-left { padding-top: 46px; }
+  .hero-left { padding-top: 0; }
   .hero-vertical { display: none; }
+
+  .hero-headline {
+    position: relative;
+    z-index: 2;
+    margin-top: -170px;
+  }
+  .hero h1 { text-shadow: 0 8px 28px rgba(0,0,0,0.55); }
 
   .intro-grid, .about-grid, .contact-grid, .hours-grid { grid-template-columns: 1fr; }
   .intro-grid { gap: 34px; }
