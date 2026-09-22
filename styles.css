@@ -882,21 +882,6 @@ h1, h2, h3 {
 }
 
 /* ==========================================================================
-   Sticky mobile booking bar
-   ========================================================================== */
-.mobile-cta-bar {
-  display: none;
-  position: fixed;
-  left: 0; right: 0; bottom: 0;
-  z-index: 400;
-  padding: 12px var(--gutter);
-  background: rgba(10,10,9,0.92);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid var(--line);
-}
-.mobile-cta-bar .btn { width: 100%; justify-content: center; }
-
-/* ==========================================================================
    Responsive
    ========================================================================== */
 @media (max-width: 1280px) {
@@ -945,9 +930,6 @@ h1, h2, h3 {
   .contact-map { min-height: 320px; }
 
   .footer-top { grid-template-columns: 1fr 1fr; row-gap: 44px; }
-
-  body { padding-bottom: 74px; }
-  .mobile-cta-bar { display: block; }
 }
 
 @media (max-width: 720px) {
