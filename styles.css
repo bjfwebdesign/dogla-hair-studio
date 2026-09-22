@@ -915,17 +915,21 @@ h1, h2, h3 {
   .hero-vertical { display: none; }
 
   .hero-headline {
-    order: 1;
     position: relative;
     z-index: 2;
-    margin-top: -130px;
+    margin-top: -182px;
   }
   .hero h1 { text-shadow: 0 8px 28px rgba(0,0,0,0.55); }
 
-  .hero-sub { order: 2; }
-  .hero-kicker { order: 3; margin-bottom: 0; }
-  .hero-cta { order: 4; margin-top: 26px; }
-  .hero-meta { order: 5; }
+  .hero-headline .hero-kicker {
+    background: rgba(10,10,9,0.72);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    width: fit-content;
+    padding: 8px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
 
   .intro-grid, .about-grid, .contact-grid, .hours-grid { grid-template-columns: 1fr; }
   .intro-grid { gap: 34px; }
